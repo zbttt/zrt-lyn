@@ -1,0 +1,50 @@
+{
+  "pages": ["pages/store/store",
+    "pages/user/user",
+    "pages/sc/sc",
+    "pages/message/message",
+    "pages/storelist/storelist",
+    "pages/spinfo/spinfo",
+    "pages/sclist/sclist",
+    "pages/dfhlist/dfhlist",
+    "pages/dshlist/dshlist",
+    "pages/yshlist/yshlist"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#41be57",
+    "navigationBarTitleText": "校园二手交易平台",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/store/store",
+        "text": "商城",
+        "iconPath": "pictures/store1.png",
+        "selectedIconPath": "pictures/store.png"
+      },
+      {
+        "pagePath": "pages/sclist/sclist",
+        "text": "收藏",
+        "iconPath": "pictures/sc1.png",
+        "selectedIconPath": "pictures/sc.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "pictures/message1.png",
+        "selectedIconPath": "pictures/message.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "pictures/user1.png",
+        "selectedIconPath": "pictures/user.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
