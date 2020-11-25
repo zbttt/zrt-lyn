@@ -1,0 +1,56 @@
+<!--pages/spinfo/spinfo.wxml-->
+<swiper  class="swiper-group" indicator-dots circular >
+      <swiper-item wx:for="{{[1,2,3,4,5,6]}}">
+        <image class="swiper-img" src="/pictures/aj5.jpg"></image>
+      </swiper-item>
+</swiper>
+  
+    <view class="spinfo-text">
+        <text class="text">Jordan官方AIR JORDAN 5RETRO SE AJ5复刻男子运动鞋情侣款CZ5725</text>
+       </view>
+      <view class="price-info">
+       <view class="rmb">
+        <image class="rmb-image" src="/pictures/人民币2-01.png"></image>
+       </view>
+      
+       <view class="price">
+        <text>{{price}}</text>
+       </view>  
+      
+       <navigator>
+        <view class="button-buy">
+          <image class="button-buyimage" src="/pictures/购买.png"></image>
+        </view>
+       </navigator>
+    </view>
+    
+   <view class="pj">
+    <view class="kucun">
+      <text class="kucun-text">库存:{{kucun}}</text>
+     </view>
+    
+     <view class="pj-point">
+       <text class="pj-text">用户评价:</text>
+       <stars rate="{{rate}}"></stars>
+     </view>
+   </view>
+   
+   <view class="button-group">
+     <view class="button-groupitem">
+       <navigator>
+         <view class="button-item">
+           <image class="button-image" src="/pictures/联系.png"></image>
+           <text class="button-text">联系卖家</text>
+         </view>
+       </navigator>
+
+      <navigator>
+        <view class="button-item">
+          <image class="button-image" src="/pictures/收藏.png"></image>
+          <text class="button-text">收藏商品</text>
+        </view>
+      </navigator>
+     </view>
+    </view>
+
+    

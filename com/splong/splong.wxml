@@ -1,0 +1,28 @@
+<!--com/splong/splong.wxml-->
+<navigator url="{{spurl}}" class="sp">
+<view >
+    <view class="sp-image">
+      <image class="image" src="{{imageurl}}"></image>
+    </view>
+
+    <view class="sp-text">
+      <text>{{name}}</text>
+    </view>
+
+    <view class="sp-info">
+      <view class="price-info">
+      <view class="rmb">
+        <image class="rmb-image" src="/pictures/人民币2-01.png"></image>
+      </view>
+      
+      <view class="price">
+        <text>{{price}}</text>
+      </view>
+      </view>
+      <view class="people-number">
+        <text class="number-text">{{peoplenumber}}人付款</text>
+      </view>
+      
+    </view>
+</view>
+</navigator>

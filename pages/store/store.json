@@ -1,0 +1,11 @@
+{
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "商城",
+  "usingComponents": {
+    "searchbar":"/com/search/searchbar",
+    "sp":"/com/sp/sp",
+    "splong":"/com/splong/splong",
+    "fq":"/com/fq/fq"
+  }
+}
+

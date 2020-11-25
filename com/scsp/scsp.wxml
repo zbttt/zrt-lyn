@@ -1,0 +1,9 @@
+<!--com/scsp/scsp.wxml-->
+<view class="sc-list">
+  <navigator url="/pages/spinfo/spinfo">
+  <view class="sc-item">
+    <image class="sc-image" src="{{imageurl}}"></image>
+    <text class="sc-text">{{scsptext}}</text>
+  </view></navigator>
+
+</view>

@@ -1,0 +1,6 @@
+<!--com/user1/user1.wxml-->
+<view class="xuanxiang">
+      <image src="{{imageurl}}" class="img1"></image>
+      <view class="text1"><text>{{name}}</text></view>
+      <view class="imagesize1"><image src="/../pictures/箭头.png" class="img3"></image></view>
+    </view>

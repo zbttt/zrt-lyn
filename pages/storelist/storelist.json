@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "sp":"/com/sp/sp",
+    "splong":"/com/splong/splong",
+    "searchbar":"/com/search/searchbar"
+  }
+}

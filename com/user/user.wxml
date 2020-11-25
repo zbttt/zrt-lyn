@@ -1,0 +1,7 @@
+<!--com/user/user.wxml-->
+<navigator url="/pages/dshlist/dshlist">
+  <view class="list">
+    <image class="img" src="{{imageurl}}"></image>
+    <view class="text"><text>{{name}}</text></view>
+  </view>
+  </navigator>

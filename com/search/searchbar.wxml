@@ -1,0 +1,8 @@
+<!--com/search/searchbar.wxml-->
+<view class="searchbar">
+    <!-- <navigator wx:if="{{isnavigator}}" url="/pages/first/first" class="search"></navigator> -->
+    <view class="search-input">
+      <input class="input" placeholder="请输入你要搜索的商品"></input>
+    </view>
+
+  </view>

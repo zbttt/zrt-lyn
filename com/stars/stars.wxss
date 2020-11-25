@@ -1,0 +1,12 @@
+/* com/stars/stars.wxss */
+.star-group{
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.star-group image{
+  width: 40rpx;
+  height: 40rpx;
+}

@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "收藏",
+  "usingComponents": {
+    "searchbar":"/com/search/searchbar"
+  }
+}
+

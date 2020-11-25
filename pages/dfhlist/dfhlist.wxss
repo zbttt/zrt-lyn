@@ -1,0 +1,57 @@
+/* pages/dfhlist/dfhlist.wxss */
+.dfh-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dfh-item{
+  display: flex;
+  width: 700rpx;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  border: 2px solid pink;
+  box-sizing: border-box;
+  margin: 7rpx;
+}
+
+
+
+.dfh-image{
+  width: 300rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.sp-text{
+  font-size: 25rpx;
+  margin-left: 15rpx;
+  margin-top: 20rpx;
+}
+
+.number-text{
+  font-size: 35rpx;
+  margin:20rpx;
+
+}
+
+.bt-item{
+  font-size: 30rpx;
+  width: 10rpx;
+  height: 60rpx;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  
+}
+

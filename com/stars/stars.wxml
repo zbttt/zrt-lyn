@@ -1,0 +1,7 @@
+<!--com/stars/stars.wxml-->
+<view class="star-group">
+       <image wx:for="{{lights}}" wx:key="*this"  src="/pictures/评分星星亮.png"></image>
+       <image wx:for="{{halfs}}" wx:key="*this" src="/pictures/趣满满半星.png"></image>
+       <image wx:for="{{grays}}" wx:key="*this" src="/pictures/评分星星不亮.png"></image>
+       <text >{{ratepoint}}</text>
+    </view>

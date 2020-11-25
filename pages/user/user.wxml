@@ -1,0 +1,20 @@
+<!--pages/user/user.wxml-->
+
+<navigator>
+<view class="touxiang">
+<image class="touxiang2" src="/../pictures/头像2.png"></image>
+</view>
+</navigator>
+
+
+<view class="userlist">
+  <user name="待发货" imageurl="/pictures/待发货.png"></user>
+  <user name="待收货" imageurl="/pictures/待收货.png"></user>
+  <user name="已收货" imageurl="/pictures/已收货.png"></user>
+</view>
+
+  <view class="userlist1">
+    <user1 name="卡券" imageurl="/pictures/卡券.png"></user1>
+    <user1 name="相册" imageurl="/pictures/相册.png"></user1>
+    <user1 name="安全" imageurl="/pictures/安全.png"></user1>
+  </view>

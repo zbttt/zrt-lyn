@@ -1,0 +1,77 @@
+/* com/sp/sp.wxss */
+.sp-image{
+  border: 3px solid gray;
+  width: 100%;
+  height: 300rpx;
+  box-sizing: border-box;
+  border-radius: 30rpx;
+  
+
+}
+
+.sp{
+  display: flex;
+  width: 340rpx;
+  height: 450rpx;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 30rpx;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  border-radius: 30rpx;
+}
+
+.sp-text{
+  margin: 10rpx;
+  font-size: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sp-info{
+  display: inline-flex;
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.price-info{
+  width: 100rpx;
+  height: 60rpx;
+  display: flex;
+}
+
+.rmb{
+  width: 30rpx;
+  height: 30rpx;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.rmb-image{
+  width: 100%;
+  height: 100%;
+}
+
+.price{
+  width: 30rpx;
+  height: 30rpx;
+  font-size: 40rpx;
+  margin-left: 5rpx;
+  color: red;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.people-number{
+  font-size: 30rpx;
+  text-align: right;
+  float: right;
+  margin-left: 30rpx;
+  
+}

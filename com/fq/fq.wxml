@@ -1,0 +1,14 @@
+<!--com/fq/fq.wxml-->
+<navigator class="fq-item" url="/pages/storelist/storelist">
+    
+    <view>
+       <view class="image-item">
+         <image class="image" src="{{fqimageurl}}"></image>
+       </view>
+
+       <view class="text-item">
+         <text class="text">{{name}}</text>
+       </view>
+
+     </view>
+   </navigator>

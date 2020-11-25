@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "用户",
+  "usingComponents": {
+    "searchbar":"/com/search/searchbar",
+    "user":"/com/user/user",
+    "user1":"/com/user1/user1"
+  }
+}
