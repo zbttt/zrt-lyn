@@ -17,14 +17,14 @@
 
   <view class="all-group">
    <view class="fqlist">
-    <fq name="健康食品" fqimageurl="/pictures/健康食品.png"></fq>
-    <fq name="学习专区" fqimageurl="/pictures/学习资料.png"></fq>
-    <fq name="化妆用品" fqimageurl="/pictures/时尚美甲.png"></fq>
-    <fq name="数码科技" fqimageurl="/pictures/数码配件.png"></fq>
-    <fq name="潮鞋专区" fqimageurl="/pictures/鞋.png"></fq>
-    <fq name="运动用品" fqimageurl="/pictures/运动健身.png"></fq>
-    <fq name="潮流服饰" fqimageurl="/pictures/衣服.png"></fq>
-    <fq name="生活用品" fqimageurl="/pictures/生活用品.png"></fq>
+    <fq name="健康食品" fqimageurl="/pictures/健康食品.png" bindtap="judge" id="食品"></fq>
+    <fq name="学习专区" fqimageurl="/pictures/学习资料.png" bindtap="judge" id="学习"></fq>
+    <fq name="化妆用品" fqimageurl="/pictures/时尚美甲.png" bindtap="judge" id="化妆"></fq>
+    <fq name="数码科技" fqimageurl="/pictures/数码配件.png" bindtap="judge" id="数码"></fq>
+    <fq name="潮鞋专区" fqimageurl="/pictures/鞋.png" bindtap="judge" id="鞋子"></fq>
+    <fq name="运动用品" fqimageurl="/pictures/运动健身.png" bindtap="judge" id="运动用品"></fq>
+    <fq name="潮流服饰" fqimageurl="/pictures/衣服.png" bindtap="judge" id="服饰"></fq>
+    <fq name="生活用品" fqimageurl="/pictures/生活用品.png" bindtap="judge" id="日用品"></fq>
    </view>
   </view>
 
@@ -36,7 +36,7 @@
     </view>
 
     <view class="new-imageitem">
-      <image class="new-image" src="/pictures/今日上新.jpg"></image>
+      <image class="new-image" src="/pictures/11.jpg"></image>
     </view>
   </view>
 
@@ -46,7 +46,7 @@
     </view>
 
     <view class="new-imageitem">
-      <image class="new-image" src="/pictures/今日上新.jpg"></image>
+      <image class="new-image" src="/pictures/6.jpg"></image>
     </view>
   </view>
 

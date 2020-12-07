@@ -2,25 +2,22 @@
 
 .store-list{
   display: flex;  
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: stretch;
   flex-wrap: wrap;
 }
 
 .sp-item1{
   margin-top: 20rpx;
+  margin-left: 20rpx;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 
 }
 
 .sp-item{
+  margin-top: 20rpx;
+  margin-left: 10rpx;
   margin-bottom: 10rpx;
 }
 
-.sp-item2{
-  margin-top: 20rpx;
-  display: flex;
-  flex-direction: column;
-
-}

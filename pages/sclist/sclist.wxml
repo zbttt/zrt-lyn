@@ -1,4 +1,31 @@
 <!--pages/sclist/sclist.wxml-->
-<scsp wx:for="{{[1,2,3,4,5,6]}}" imageurl="/pictures/aj5.jpg" scsptext="Jordan官方AIR JORDAN 5RETRO SE AJ5复刻男子运动鞋情侣款CZ5725"></scsp>
+<!-- 
+<view class="sc-list">
+  
+  
+    <navigator url="/pages/spinfo/spinfo" class="sc-item" wx:for="{{scsplist}}">
+      
+    <image src="{{item.spimage}}" class="sc-image"></image>
+    <view class="right">
+      <text class="sc-text">{{item.sptext}}</text>
+      <button class="scbt" catchtap="deleteList">取消收藏</button>
+    </view>
+    </navigator>
+  
+
+</view> -->
+
+<!-- <scsp wx:for="{{scsplist}}" imageurl="{{item.spimage}}" scsptext="{{item.sptext}}" data-index="{{index}}"></scsp> -->
+<view class="sc-list">
+  
+  
+  <navigator class="sc-item" bindtap="jump" data-index="{{index}}" wx:for="{{scsplist}}">
+  <image src="{{item.imgs[0]}}" class="sc-image" data-index="{{index}}"></image>
+  <view class="right" data-index="{{index}}">
+    <text class="sc-text">{{item.name}}</text>
+    <button class="scbt" catchtap="deleteList" data-index="{{index}}">取消收藏</button>
+  </view>
+  </navigator>
 
 
+</view>

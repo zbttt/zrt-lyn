@@ -1,9 +1,25 @@
 /* pages/user/user.wxss */
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav{
+  display: flex;
+  height: 60rpx;
+  margin-right: 0px;
+  
+}
+
+.shangchuan{
+  margin-right: 0px;
+  width: 60rpx;
+  height: 100%;
+}
 .touxiang{
   display: flex;
   height: 125rpx;
   width: 100%;
-
   justify-content: center;
   box-sizing: border-box;
 

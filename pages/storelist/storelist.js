@@ -1,10 +1,25 @@
 // pages/storelist/storelist.js
+
+import {network} from "request.js"
+const app=getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    splist:[],
+    text:"",
+    flag:""
+  },
+
+  chundi: function(e){
+    var index = e.currentTarget.dataset.index;
+    console.log(index);
+    wx.navigateTo({
+      url: '/pages/spinfo/spinfo?index='+index+'&flag='+this.data.flag,
+    })
 
   },
 
@@ -12,15 +27,43 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that=this;
-    wx.request({
-      url: 'url',
-      success:function(res){
-        that.setData({
-          
-        })
-      }
+    this.setData({
+      flag:options.id
     })
+    if(options.id=="食品"){
+      this.setData({
+        splist:app.globalData.food,
+      })
+    }else if(options.id=="学习"){
+      this.setData({
+        splist:app.globalData.study,
+      })
+   }else if(options.id=="化妆"){
+    this.setData({
+      splist:app.globalData.makeup,
+    })
+ }else if(options.id=="鞋子"){
+  this.setData({
+    splist:app.globalData.shoe,
+  })
+}else if(options.id=="运动用品"){
+  this.setData({
+    splist:app.globalData.sport,
+  })
+}else if(options.id=="服饰"){
+  this.setData({
+    splist:app.globalData.clothes,
+  })
+}else if(options.id=="数码"){
+  this.setData({
+    splist:app.globalData.tech,
+  })
+}else{
+  this.setData({
+    splist:app.globalData.life,
+  })
+}
+    
 
   },
 

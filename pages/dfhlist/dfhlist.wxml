@@ -1,11 +1,6 @@
 <!--pages/dfhlist/dfhlist.wxml-->
 <view class="dfh-list">
-  <view wx:for="{{[1,2,3,4,5,6]}}" class="dfh-item">
-    <image class="dfh-image" src="{{imageurl}}"></image>
-     <view class="text">
-      <text class="sp-text">{{sp}}</text>
-      <text class="number-text">数量:{{number}}</text>
-      <button class="bt-item"><text>确认发货</text></button>
-     </view>
-  </view>
+  
+    <list wx:for="{{[1,2,3,4,5,6]}}" sp="Jordan官方AIR JORDAN 5RETRO SE AJ5复刻男子运动鞋情侣款CZ5725" title="确认发货"></list>
+  
 </view>

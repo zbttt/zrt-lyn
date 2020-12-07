@@ -1,0 +1,76 @@
+/* page/upsp/upsp.wxss */
+.zplist{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.input{
+  display: flex;
+
+  margin: 20rpx;
+}
+
+.intro-item{
+  border-radius: 30rpx;
+  border: 4rpx solid pink;
+  box-sizing: border-box;
+  
+}
+
+.text{
+  margin-right: 15rpx;
+  
+}
+
+
+.weui-uploader__img{
+   width: 170rpx;
+   height: 170rpx;
+   display: flex;
+   
+}
+
+.checkbox{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 20rpx;
+}
+
+.check-item{
+  margin: 20rpx;
+  font-size: 25rpx;
+  color: rgba(54, 56, 173, 0.74);
+
+}
+
+
+
+.pic {
+display: flex;
+width: 190rpx;
+margin: 20rpx;
+   height: 170rpx;
+/* position: absolute;
+margin-right:9px;
+margin-bottom:9px; */
+}
+ 
+.delete-btn{
+  width: 20rpx;
+  height: 20rpx;
+  /* position: absolute;
+  right: 0;
+  top:0 */
+}
+ 
+
+ 
+button {
+  width: 100%;
+  margin-top: 30rpx;
+}
+
+.miaoshu{
+  margin-top: 30rpx;
+}

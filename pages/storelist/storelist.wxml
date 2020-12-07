@@ -1,23 +1,12 @@
 <!--pages/storelist/storelist.wxml-->
 <searchbar></searchbar>
 <view class="store-list">
-  
-  
-  
+
       <view class="sp-item1">
-        <view wx:for="{{[1,2,3,4,5,6]}}" class="sp-item">
-          <sp  spurl="/pages/spinfo/spinfo" imageurl="/pictures/aj1.jpg" name="Jordan官方 AIR JORDAN 1 MID AJ1男子运动鞋休闲中帮复古 554724">
+        <view wx:for="{{splist}}" class="sp-item">
+          <sp  data-index="{{index}}" imageurl="{{item.spimage[0]}}" name="{{item.name}}" price="{{item.price}}" bindtap=chundi">
           </sp>
         </view>
       </view>
-      
- 
-
-  
-      <view class="sp-item2">
-        <view wx:for="{{[1,2,3,4,5]}}" class="sp-item">
-        <splong  imageurl="/pictures/aj5.jpg" spurl="/pages/spinfo/spinfo" name="Jordan官方AIR JORDAN 5RETRO SE AJ5复刻男子运动鞋情侣款CZ5725"></splong>
-        </view>
-  </view>
  
 </view>
