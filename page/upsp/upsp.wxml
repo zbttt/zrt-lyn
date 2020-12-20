@@ -31,18 +31,27 @@
     <input name="intro" placeholder="请输入商品简介"
     bindinput ="introInput" value="{{inputvalue}}"/>
   </view>
+
+  <view class="input">
+    <text class="text">商品数量:</text>
+    <input name="kucun" placeholder="请输入上架商品数量"
+    bindinput ="kucunInput" value="{{inputvalue}}"/>
+  </view>
 </view>
-    <checkbox-group bindchange="checkboxChange" class="checkbox">
-    <checkbox value='食品' class="check-item" checked="{{check}}">食品</checkbox>
-    <checkbox value='学习' class="check-item" checked="{{check}}">学习</checkbox>
-    <checkbox value='化妆' class="check-item" checked="{{check}}">化妆</checkbox>
-    <checkbox value='鞋子' class="check-item" checked="{{check}}">鞋子</checkbox>
-    <checkbox value='运动用品' class="check-item" checked="{{check}}">运动</checkbox>
-    <checkbox value='服饰' class="check-item" checked="{{check}}">服饰</checkbox>
-    <checkbox value='数码' class="check-item" checked="{{check}}">数码</checkbox>
-    <checkbox value='日常用品' class="check-item" checked="{{check}}">日用品</checkbox>
-    <checkbox value='物物交换' class="check-item" checked="{{check}}">物物交换</checkbox>
-</checkbox-group>
+    <radio-group bindchange="radioboxChange" class="checkbox">
+    <radio value='食品' class="check-item" checked="{{check}}">食品</radio>
+    <radio value='学习' class="check-item" checked="{{check}}">学习</radio>
+    <radio value='化妆' class="check-item" checked="{{check}}">化妆</radio>
+    <radio value='鞋子' class="check-item" checked="{{check}}">鞋子</radio>
+    <radio value='运动用品' class="check-item" checked="{{check}}">运动</radio>
+    <radio value='服饰' class="check-item" checked="{{check}}">服饰</radio>
+    <radio value='数码' class="check-item" checked="{{check}}">数码</radio>
+    <radio value='日常用品' class="check-item" checked="{{check}}">日用品</radio>
+</radio-group>
+<radio-group bindchange="checkboxChange">
+    <radio value='可交换' class="check-item1" checked="{{check}}" >可交换</radio>
+    <radio value='不交换' class="check-item1" checked="{{check}}" >不交换</radio>
+</radio-group>
     <button class="upload-img-btn" bindtap="chooseImg" >选择图片</button>
     <button type='primary' bindtap="shangchuan">确定上传</button>
   </view>

@@ -17,6 +17,12 @@
   
 }
 
+.check-item1{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rpx;
+}
+
 .text{
   margin-right: 15rpx;
   
@@ -72,5 +78,5 @@ button {
 }
 
 .miaoshu{
-  margin-top: 30rpx;
+  margin: 20rpx;
 }

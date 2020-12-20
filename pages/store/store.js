@@ -1,56 +1,130 @@
 // pages/store/store.js
+const app=getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
-    
+    imgs:[],
 
+  },
+
+  onsearchinput:function(event){
+    console.log(event)
   },
 
   judge:function(e){
-
-    if(e.currentTarget.id=="食品"){
-      wx.navigateTo({
-        url: '/pages/storelist/storelist?id=食品',
+      wx.request({
+        url: 'http://101.200.158.165:8082/superadmin/listGoodsByTag?tag='+e.currentTarget.id,
+        method:"GET",
+        success(res){
+          var arrayup=[]
+          arrayup= JSON.stringify(res.data.success) 
+          console.log(arrayup) 
+          wx.request({
+            url:'http://101.200.158.165:8082/superadmin/listImagesInOrder' ,
+            method:"GET",
+            success(res){
+              var nmsl=[]
+              nmsl=JSON.stringify(res.data)
+              var nmsl1=[]
+              nmsl1=JSON.parse(nmsl)
+              console.log(nmsl1.success)
+              var flag={goodsid:"",
+              addr:""}
+              flag.goodsid=nmsl1.success[0].goodsId
+              flag.addr=nmsl1.success[0].imageAddr
+              var array=[]
+              var imgs=[]
+              var x=0
+              console.log(nmsl1.success.length)
+              for(var i=0;i<=nmsl1.success.length-1;i++){
+                  if(flag.goodsid==nmsl1.success[x].goodsId){
+                    var stru={goodsid:0,addr:""}
+                  stru.goodsid=nmsl1.success[x].goodsId;
+                  stru.addr=nmsl1.success[x].imageAddr;
+                  array.push(stru)
+                  x=x+1
+                  console.log(x)
+                  if(x==nmsl1.success.length){
+                    array.push(flag)
+                    imgs.push(array)
+                    break;
+                  }
+                  }else{
+                    var stru={goodsid:0,addr:""}
+                    stru.goodsid=flag.goodsid;
+                  stru.addr=flag.addr;
+                  array.push(stru);
+                  imgs.push(array);
+                  var array=[]
+                  flag.goodsid=nmsl1.success[x].goodsId
+                  flag.addr=nmsl1.success[x].imageAddr
+                  x=x+1;
+                  console.log(x)
+                  if(x==nmsl1.success.length){
+                    array.push(flag)
+                    imgs.push(array)
+                    break;
+                  }
+              }
+              }
+              console.log(imgs)
+              var arr=JSON.parse(arrayup)
+              console.log(arr)
+              
+              var temparr=[]
+              for(var a=0;a<=arr.length-1;a++){
+                for(var b=0;b<=imgs.length-1;b++){
+                  if(arr[a].goodsId==imgs[b][0].goodsid){
+                  var temp={
+                    goodsId:"",
+                    goodsName:"",
+                    goodsPrice:"",
+                    goodsTextDesc:"",
+                    goodsTag:"",
+                    imgs:[]
+                  }
+                  temp.goodsId=arr[a].goodsId
+                  temp.goodsName=arr[a].goodsName
+                  temp.goodsPrice=arr[a].goodsPrice
+                  temp.goodsTextDesc=arr[a].goodsTextDesc
+                  temp.goodsTag=arr[a].goodsTag
+                  temp.imgs=imgs[b]
+                  temparr.push(temp)
+                  break
+                }
+                if((b==imgs.length-1)&&arr[a].goodsId!=imgs[b][0].goodsid){
+                  temparr.push(arr[a])
+                }
+              }
+                
+               
+              }
+              console.log(123)
+              console.log(temparr)
+              var temparr1=[]
+              temparr1=JSON.stringify(temparr)
+              wx.navigateTo({
+                url: '/pages/storelist/storelist?info='+temparr1,
+              })
+              
+            }   
+          })
+        }
       })
-    }else if(e.currentTarget.id=="学习"){
-      wx.navigateTo({
-        url: '/pages/storelist/storelist?id=学习',
-      })
-   }else if(e.currentTarget.id=="化妆"){
-    wx.navigateTo({
-      url: '/pages/storelist/storelist?id=化妆',
-    })
- }else if(e.currentTarget.id=="鞋子"){
-  wx.navigateTo({
-    url: '/pages/storelist/storelist?id=鞋子',
-  })
-}else if(e.currentTarget.id=="运动用品"){
-  wx.navigateTo({
-    url: '/pages/storelist/storelist?id=运动用品',
-  })
-}else if(e.currentTarget.id=="服饰"){
-  wx.navigateTo({
-    url: '/pages/storelist/storelist?id=服饰',
-  })
-}else if(e.currentTarget.id=="数码"){
-  wx.navigateTo({
-    url: '/pages/storelist/storelist?id=数码',
-  })
-}else{
-  wx.navigateTo({
-    url: '/pages/storelist/storelist?id=日用品',
-  })
-}
-  },
+      
+  }
+  
+  
+  ,
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(app.globalData.useraccount)
 
   }
 

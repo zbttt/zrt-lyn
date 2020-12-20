@@ -1,31 +1,18 @@
-// page/upsp/upsp.js
-const app=getApp()
+// page/exchange/exchange.js
 Page({
- 
+
   /**
    * 页面的初始数据
    */
   data: {
-    imgs: [],
-    spinfo:[],
-    exchange:"",
-    inputvalue:"",
-    check:"",
-    name:"",
+    exchangearray:[],
+    imgs:[],
     intro:"",
-    text:"",
-    kucun:"",
-    price:0,
-    miaoshu:{
-      price:"",
-      intro:"",
-      type:"",
-      name:"",
-      spimage:[],
-      exchange:""
-    }
+    name:"",
+    price:"",
+    inputvalue:""
   },
-  // 上传图片
+
   chooseImg: function (e) {
     var that = this;
     var imgs = this.data.imgs;
@@ -89,92 +76,23 @@ Page({
     })
   },
 
-  shangchuan:function(){console.log( app.globalData.storelist)
-    var array=[];
-    var stru={
-      name:"",
-      price:0,
-      intro:"",
-      spimage:[],
-      type:"",
-      exchange:""
-    }
-   
-
-var list=this.data.imgs;
-
-wx.request({
-  url: 'http://101.200.158.165:8082/superadmin/addGood',
-  method:"POST",
-  data:{
-    "goodsName":this.data.name,
-    "goodsPrice":this.data.price,
-    "goodsTextDesc":this.data.intro,
-    "goodsTag":this.data.type,
-    "goodsCanExchange":this.data.exchange,
-    "userAccount":app.globalData.useraccount
-  },
-  success(res){
-    console.log(res.data)
-    console.log(list)
-    for(var i=0;i<list.length;i++){
-      wx.request({
-      url: 'http://101.200.158.165:8082/superadmin/insertImages',
-      method:'POST',
-      data:{
-        "imageAddr":list[i],
-        "goodsId":res.data['success']
-      },
-      success(res){
-        console.log(res.data)
-      }
-    })
-  }
-    
-  }
-})
-    
+  jiaohuan:function(){
+    var array=[]
+    console.log(this.data.name)
+    console.log(this.data.intro)
+    console.log(this.data.price)
+    console.log(this.data.imgs)
     this.setData({
       inputvalue:"",
       check:false,
       imgs:array
     })
-
-    
-
   },
-
-  radioboxChange:function(e){
-    this.setData({
-      type:e.detail.value
-    })
-  },
-
-  checkboxChange:function(e){
-
-   if(e.detail.value=="可交换"){
-     this.setData({
-       exchange:true
-     })
-   }else{
-    this.setData({
-      exchange:false
-    })
-   }console.log(this.data.exchange)
-  },
-
 
   introInput:function(e){
     this.setData({
       intro:e.detail.value
     })
-
-  },
-  kucunInput:function(e){
-    this.setData({
-      kucun:e.detail.value
-    })
-
   },
   nameInput:function(e){
     this.setData({
@@ -189,60 +107,63 @@ wx.request({
 
   },
 
-
-  
- 
-  onLoad: function () {
-   
-
-
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    var a=JSON.parse(options.exchangeinfo)
+    this.setData({
+      exchangearray:a
+    })
+     console.log(a)
   },
- 
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
- 
+
   },
- 
+
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+
   },
- 
+
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
- 
+
   },
- 
+
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
- 
+
   },
- 
+
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
- 
+
   },
- 
+
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
- 
+
   },
- 
+
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
- 
+
   }
 })

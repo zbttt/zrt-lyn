@@ -19,10 +19,10 @@
 <view class="sc-list">
   
   
-  <navigator class="sc-item" bindtap="jump" data-index="{{index}}" wx:for="{{scsplist}}">
-  <image src="{{item.imgs[0]}}" class="sc-image" data-index="{{index}}"></image>
+  <navigator class="sc-item" bindtap="jump" data-index="{{index}}" wx:for="{{scsplistimg}}">
+  <image src="{{item.imgs[0].addr}}" class="sc-image" data-index="{{index}}"></image>
   <view class="right" data-index="{{index}}">
-    <text class="sc-text">{{item.name}}</text>
+    <text class="sc-text">{{item.goodsName}}</text>
     <button class="scbt" catchtap="deleteList" data-index="{{index}}">取消收藏</button>
   </view>
   </navigator>

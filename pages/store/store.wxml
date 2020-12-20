@@ -1,5 +1,5 @@
 <!--pages/store/store.wxml-->
-<searchbar></searchbar>
+<navigator url="/pages/search/search"><searchbar bindsearchin="onsearchinput"></searchbar></navigator>
 
 
    <swiper  class="swiper-group" indicator-dots circular autoplay interval="2000" >

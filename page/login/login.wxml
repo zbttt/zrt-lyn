@@ -1,0 +1,35 @@
+<view class="login-group">
+  <image src="/pictures/摄图网_500360705_星空星轨银河素材（非企业商用）.jpg"></image>
+  <view class="user1">
+    <view class="user">
+    <text class="login-item">账号:</text>
+    <input name="user-login" placeholder="请输入用户账号"  placeholder-class="phcolor" class="input"
+    bindinput ="login" value="{{inputvalue}}"/>
+</view>
+<view class="user">
+    <text class="login-item">密码:</text>
+    <input name="password-login" placeholder="请输入用户密码" placeholder-class="phcolor" class="input"
+    bindinput ="password" value="{{inputvalue}}"/>
+    
+</view>
+
+
+
+
+
+<navigator bindtap="toastShow" ><button bindtap="dengru" class="button-login" >登录账号</button></navigator>
+
+<!-- <toast hidden="{{status}}" duration="1000" bindchange="toastHide">
+        登录成功
+</toast>
+
+  <toast   wx:if="{{flag}}" hidden="{{status}}" duration="1000" bindchange="toastHide">
+        用户信息有误
+</toast> -->
+
+<navigator url="/page/zhuce/zhuce" ><button class="button-login">注册账号</button></navigator>
+
+
+</view>
+
+</view>

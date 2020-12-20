@@ -18,4 +18,5 @@
     <user1 name="相册" imageurl="/pictures/相册.png"></user1>
     <user1 name="安全" imageurl="/pictures/安全.png"></user1>
     <navigator url="/pages/sclist/sclist"><user1 name="收藏" imageurl="/pictures/sc1.png"></user1></navigator>
+    <navigator url="/page/usersp/usersp"><user1 name="商品" imageurl="/pictures/商品.png"></user1></navigator>
   </view>

@@ -12,7 +12,17 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    getApp().globalData.goEasy.subscribe({
+      channel: "my_channel",//替换为您自己的channel
+      onMessage: function (message) {
+          console.log("Channel:" + message.channel + " content:" + message.content);
+      }
+    });
 
+    getApp().globalData.goEasy.publish({
+      channel: "my_channel", //替换为您自己的channel
+      message: "Hello, zrt!" //替换为您想要发送的消息内容
+  });
   },
 
   /**

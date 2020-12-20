@@ -1,0 +1,17 @@
+/* pages/search/search.wxss */
+.item-list-group{
+  padding:10rpx 20rpx;
+
+}
+
+.item-group{
+  padding: 10rpx 0;
+  border-bottom: 1px solid #e4e4e4;
+  display: flex;
+
+}
+
+.item-text{
+ font-size: 40rpx;
+}
+

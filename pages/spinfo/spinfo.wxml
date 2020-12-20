@@ -1,11 +1,10 @@
 <!--pages/spinfo/spinfo.wxml-->
 <swiper  class="swiper-group" indicator-dots circular >
       <swiper-item wx:for="{{imgs}}">
-        <image class="swiper-img" src="{{item}}"></image>
+        <image class="swiper-img" src="{{item.addr}}"></image>
       </swiper-item>
 </swiper>
-  
-    <view class="spinfo-text">
+  <view class="a"> <view class="spinfo-text">
         <text class="text">{{name}}</text>
        </view>
       <view class="price-info">
@@ -22,12 +21,20 @@
           <image class="button-buyimage" src="/pictures/购买.png"></image>
         </view>
        
-    </view>
+    </view></view>
+   
     
    <view class="pj">
-    <view class="kucun">
+    <view class="up-kucun">
+      
+      <view class="kucun">
       <text class="kucun-text">库存:{{kucun}}</text>
      </view>
+     <navigator class="jh" wx:if="{{exchange==true}}" bindtap="exchange">
+     <image class="jiaohuan" src="/pictures/标签.png" ><text class="jiaohuantext">交换</text></image>
+    </navigator>
+    </view>
+    
     
      <view class="pj-point">
        <text class="pj-text">用户评价:</text>
@@ -39,7 +46,7 @@
      <text>商品简介:{{intro}}</text>
    </view>
    
-   <!-- <view class="button-group"> -->
+
      <view class="button-groupitem">
        <navigator class="button-item">
            <image class="button-image" src="/pictures/联系.png"></image>
@@ -51,6 +58,6 @@
           <text class="button-text">收藏商品</text>
       </navigator>
      </view>
-    <!-- </view> -->
+
 
     

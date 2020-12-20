@@ -1,0 +1,58 @@
+page{
+  height: 100%;
+}
+
+.login-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30rpx ;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  /* background-color: rgb(188, 224, 241); */
+}
+
+image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.user1{
+  position: absolute;
+  z-index: 1;
+  border: 1px solid pink;
+  border-radius: 30rpx;
+  /* background-color: rgb(227, 192, 255); */
+  /* background: rgba(0,0,0,0); */
+  padding: 30rpx;
+}
+
+.user{
+  display: flex;
+  margin: 15rpx;
+}
+
+
+.phcolor {
+  color: #7ba4e2;
+}
+.input{
+  width: 230rpx;
+  border-bottom: 1rpx solid rgb(192, 185, 221);
+  color: black;
+}
+
+.button-login{
+  margin-top: 25rpx;
+  margin-bottom: 10rpx;
+  background-color: rgb(20, 118, 148);
+}
+
+.login-item{
+  font-weight:900 ;
+}

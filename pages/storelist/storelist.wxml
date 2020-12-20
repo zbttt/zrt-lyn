@@ -1,10 +1,10 @@
 <!--pages/storelist/storelist.wxml-->
-<searchbar></searchbar>
+<searchbar bindsearchin="onsearchinput"></searchbar>
 <view class="store-list">
 
       <view class="sp-item1">
-        <view wx:for="{{splist}}" class="sp-item">
-          <sp  data-index="{{index}}" imageurl="{{item.spimage[0]}}" name="{{item.name}}" price="{{item.price}}" bindtap=chundi">
+        <view wx:for="{{info}}" class="sp-item">
+          <sp  data-index="{{index}}" imageurl="{{item.imgs[0].addr}}" name="{{item.goodsName}}" price="{{item.goodsPrice}}" bindtap=chundi">
           </sp>
         </view>
       </view>

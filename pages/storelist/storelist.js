@@ -11,14 +11,21 @@ Page({
   data: {
     splist:[],
     text:"",
-    flag:""
+    info:[]
+  },
+
+  onsearchinput:function(event){
+    console.log(event)
   },
 
   chundi: function(e){
     var index = e.currentTarget.dataset.index;
     console.log(index);
+    console.log(this.data.info[index])
+    var info1=JSON.stringify(this.data.info[index])
+    console.log(info1)
     wx.navigateTo({
-      url: '/pages/spinfo/spinfo?index='+index+'&flag='+this.data.flag,
+      url: '/pages/spinfo/spinfo?flag='+info1,
     })
 
   },
@@ -27,44 +34,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-      flag:options.id
-    })
-    if(options.id=="食品"){
-      this.setData({
-        splist:app.globalData.food,
-      })
-    }else if(options.id=="学习"){
-      this.setData({
-        splist:app.globalData.study,
-      })
-   }else if(options.id=="化妆"){
-    this.setData({
-      splist:app.globalData.makeup,
-    })
- }else if(options.id=="鞋子"){
-  this.setData({
-    splist:app.globalData.shoe,
-  })
-}else if(options.id=="运动用品"){
-  this.setData({
-    splist:app.globalData.sport,
-  })
-}else if(options.id=="服饰"){
-  this.setData({
-    splist:app.globalData.clothes,
-  })
-}else if(options.id=="数码"){
-  this.setData({
-    splist:app.globalData.tech,
-  })
-}else{
-  this.setData({
-    splist:app.globalData.life,
-  })
-}
+    var array=[];
+    array=JSON.parse(options.info)
     
-
+    this.setData({
+      info:array
+    })
+    console.log(options.info)
   },
 
   /**

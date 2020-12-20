@@ -1,0 +1,11 @@
+<!--pages/search/search.wxml-->
+<searchbar></searchbar>
+<view class="item-list-group">
+<view class="item-group" wx:for="{{[1,2,3,4,5,6]}}">
+<text class="item-text">nike</text>
+</view>
+
+
+
+
+</view>

@@ -1,2 +1,3 @@
 <!--pages/message/message.wxml-->
 <searchbar></searchbar>
+<script type="text/javascript" src="https://cdn.goeasy.io/goeasy-1.0.17.js"></script>

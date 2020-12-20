@@ -1,42 +1,17 @@
-// pages/spinfo/spinfo.js
-
-const app=getApp()
-
+// pages/search/search.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    splist:[{}],
-    container:{
-      name:"",
-      price:"",
-      intro:"",
-      imgs:[]
-    },
-    imgs:[],
-    name:"",
-    price:0,
-    kucun:0,
-    rate:0,
-    intro:"",
-    id:""
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options);
-    this.data.container.name=this.data.name;
-    this.data.container.price=this.data.price;
-    this.data.container.intro=this.data.intro;
-    this.data.container.imgs=this.data.imgs;
-  },
-
-  shoucang:function(){
-    app.globalData.sclist.push(this.data.container);
 
   },
 
