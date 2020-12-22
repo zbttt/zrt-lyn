@@ -1,0 +1,35 @@
+<!--page/exchange/exchange.wxml-->
+<view class="zplist">
+    <view class='pic' wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+      
+        <image class='weui-uploader__img '
+                src="{{item}}"
+                data-index="{{index}}" mode="aspectFill" bindtap="previewImg">
+        </image><icon type='cancel' class="delete-btn" data-index="{{index}}" catchtap="deleteImg"></icon>
+     
+    </view>
+</view>
+
+<view class="miaoshu">
+  <view class="intro-item">
+  <view class="input">
+  <text class="text">交换商品名称:</text>
+  <input  name="nameInput" placeholder="请输入交换商品名称"
+    bindinput ="nameInput" value="{{inputvalue}}"/>
+  </view>
+  <view class="input">
+    <text class="text">交换商品估价:</text>
+    <input name="price" placeholder="请输入交换商品价格"
+    bindinput ="price" value="{{inputvalue}}"/>
+  </view>
+
+  <view class="input">
+    <text class="text">交换商品介绍:</text>
+    <input name="intro" placeholder="请输入交换商品简介"
+    bindinput ="introInput" value="{{inputvalue}}"/>
+  </view>
+  </view>
+</view>
+
+<button class="upload-img-btn" bindtap="chooseImg" >选择图片</button>
+    <button type='primary' bindtap="jiaohuan">申请交换</button>

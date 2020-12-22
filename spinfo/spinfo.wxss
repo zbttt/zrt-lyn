@@ -1,0 +1,193 @@
+/* pages/spinfo/spinfo.wxss */
+
+
+.swiper-group{
+  display: flex;
+  margin: 30rpx;
+  margin-bottom: 0px;
+  height: 800rpx;
+ 
+}
+
+.swiper-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 30rpx;
+}
+
+.price-info{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  align-items: center;
+  
+}
+
+.a{
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  border: 5rpx solid rgb(217, 232, 236);
+  background-color: rgb(217, 232, 236);
+  border-radius: 25rpx;
+}
+
+.rmb{
+  width: 30rpx;
+  height: 30rpx;
+  display: flex;
+
+}
+
+.rmb-image{
+  width: 100%;
+  height: 100%;
+}
+
+.jiaohuan{
+  width: 100%;
+  height: 100%;
+}
+
+.jiaohuantext{
+  width: 150px;
+  font-size: 32rpx;
+  height: 24px;  
+  position: absolute;
+  left: 0;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  margin-left: 20rpx;
+  color: rgb(127, 89, 197);
+}
+
+.jh{
+  width: 140rpx;
+  height: 100rpx;
+  flex: 1;
+  margin-left: 420rpx;
+  position: relative;
+}
+
+.price{
+  width: 30rpx;
+  height: 30rpx;
+  font-size: 40rpx;
+  margin-left: 30rpx;
+  color: red;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+.spinfo-text{
+  text-align: center;
+  margin: 15rpx;
+  border: 5rpx solid pink;
+  border-radius: 20rpx;
+  background-color: rgb(143, 186, 188);
+}
+
+.kucun{
+  font-size: 40rpx;
+  display: flex;
+  color:rgb(113, 82, 199);
+}
+
+
+
+.pj{
+  display: flex;
+  flex-direction: column;
+  margin: 15rpx;
+}
+
+.up-kucun{
+  display: flex;
+  align-items: center;
+}
+
+.pj-point{
+  margin-top: 25rpx;
+  display: flex;
+  font-size: 40rpx;
+}
+
+.button-group{
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 0rpx;
+  /* height: 200rpx; */
+  width: 100%;
+  
+  
+
+
+}
+
+.button-item{
+  flex: 1;
+  margin-bottom: 0px;
+  height: 100rpx;
+  width: 371rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border-right:1px solid red ; */
+  border-radius: 30rpx;
+  border: 1px solid rgb(191, 216, 206);
+  background-color: rgb(191, 216, 206);
+}
+
+.button-image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.button-text{
+  font-size: 20rpx;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+.intro{
+  margin: 20rpx;
+  font-size: 40rpx;
+  color: pink;
+  border: 1px solid gray;
+  border-radius: 20rpx;
+  height: 180rpx;
+  
+}
+
+.button-groupitem{
+  display: flex;
+  margin-top: 20rpx;
+  justify-content: space-evenly;
+  
+}
+
+
+
+.button-buy{
+  height: 100rpx;
+  width: 110rpx;
+  display: flex;
+  margin-left: 500rpx;
+  box-sizing: border-box;
+}
+
+.button-buyimage{
+  width: 100%;
+  height: 100%;
+}
+
+

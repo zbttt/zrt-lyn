@@ -1,0 +1,13 @@
+<!--pages/yshlist/yshlist.wxml-->
+<view class="sc-list">
+  
+  <view class="sc-item" wx:for="{{[1,2,3,4,5,6]}}">
+    <image class="sc-image" src="{{imageurl}}"></image>
+    <view class="yshitem-text">
+      <text class="sc-text">{{yshtext}}</text>
+      <text class="number-text">数量:{{number}}</text>
+    </view>
+    
+  </view>
+
+</view>

@@ -1,0 +1,59 @@
+/* page/exchange/exchange.wxss */
+.zplist{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.weui-uploader__img{
+  width: 170rpx;
+  height: 170rpx;
+  display: flex;
+  
+}
+
+.pic {
+  display: flex;
+  width: 190rpx;
+  margin: 20rpx;
+     height: 170rpx;
+  /* position: absolute;
+  margin-right:9px;
+  margin-bottom:9px; */
+  }
+
+  .delete-btn{
+    width: 20rpx;
+    height: 20rpx;
+    /* position: absolute;
+    right: 0;
+    top:0 */
+  }
+
+  button {
+    width: 100%;
+    margin-top: 30rpx;
+  }
+
+  .text{
+    margin-right: 15rpx;
+    
+  }
+
+  .input{
+    display: flex;
+  
+    margin: 20rpx;
+  }
+
+  .miaoshu{
+    margin: 20rpx;
+  }
+
+  .intro-item{
+    border-radius: 30rpx;
+    border: 4rpx solid pink;
+    box-sizing: border-box;
+   
+  }
+

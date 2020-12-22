@@ -1,5 +1,7 @@
 {
-  "pages": ["pages/store/store",
+  "pages": [
+    "page/login/login",
+    "pages/store/store",
     "pages/user/user",
     "pages/sc/sc",
     "pages/message/message",
@@ -8,8 +10,13 @@
     "pages/sclist/sclist",
     "pages/dfhlist/dfhlist",
     "pages/dshlist/dshlist",
-    "pages/yshlist/yshlist"
-
+    "pages/yshlist/yshlist",
+    "page/upsp/upsp",
+    "page/exchange/exchange",
+    "page/zhuce/zhuce",
+    "page/test/test",
+    "page/usersp/usersp",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -26,12 +33,6 @@
         "selectedIconPath": "pictures/store.png"
       },
       {
-        "pagePath": "pages/sclist/sclist",
-        "text": "收藏",
-        "iconPath": "pictures/sc1.png",
-        "selectedIconPath": "pictures/sc.png"
-      },
-      {
         "pagePath": "pages/message/message",
         "text": "消息",
         "iconPath": "pictures/message1.png",
@@ -42,6 +43,12 @@
         "text": "用户",
         "iconPath": "pictures/user1.png",
         "selectedIconPath": "pictures/user.png"
+      },
+      {
+        "pagePath": "page/upsp/upsp",
+        "text": "上传",
+        "iconPath": "pictures/上传1.png",
+        "selectedIconPath": "pictures/上传.png"
       }
     ]
   },

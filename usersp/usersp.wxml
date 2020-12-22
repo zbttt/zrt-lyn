@@ -1,0 +1,14 @@
+<view class="sc-list">
+  
+  
+  <navigator class="sc-item" bindtap="jump" data-index="{{index}}" wx:for="{{usersp}}">
+  <image src="{{item.imgs[0].addr}}" class="sc-image" data-index="{{index}}"></image>
+  <view class="right" data-index="{{index}}">
+    <text class="sc-text">{{item.goodsName}}</text> 
+    <button class="scbt" catchtap="deleteList" data-index="{{index}}">下架商品</button>
+  </view>
+ 
+  </navigator>
+
+
+</view>

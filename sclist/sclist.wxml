@@ -1,0 +1,31 @@
+<!--pages/sclist/sclist.wxml-->
+<!-- 
+<view class="sc-list">
+  
+  
+    <navigator url="/pages/spinfo/spinfo" class="sc-item" wx:for="{{scsplist}}">
+      
+    <image src="{{item.spimage}}" class="sc-image"></image>
+    <view class="right">
+      <text class="sc-text">{{item.sptext}}</text>
+      <button class="scbt" catchtap="deleteList">取消收藏</button>
+    </view>
+    </navigator>
+  
+
+</view> -->
+
+<!-- <scsp wx:for="{{scsplist}}" imageurl="{{item.spimage}}" scsptext="{{item.sptext}}" data-index="{{index}}"></scsp> -->
+<view class="sc-list">
+  
+  
+  <navigator class="sc-item" bindtap="jump" data-index="{{index}}" wx:for="{{scsplistimg}}">
+  <image src="{{item.imgs[0].addr}}" class="sc-image" data-index="{{index}}"></image>
+  <view class="right" data-index="{{index}}">
+    <text class="sc-text">{{item.goodsName}}</text>
+    <button class="scbt" catchtap="deleteList" data-index="{{index}}">取消收藏</button>
+  </view>
+  </navigator>
+
+
+</view>

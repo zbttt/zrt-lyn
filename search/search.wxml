@@ -1,0 +1,7 @@
+<!--pages/search/search.wxml-->
+<searchbar bindsearchin="onsearchinput"></searchbar>
+<view class="item-list-group">
+<view class="item-group" wx:for="{{searcharray}}" >
+<text class="item-text" bindtap="jump" data-index="{{index}}">{{item.goodsName}}</text>
+</view>
+</view>

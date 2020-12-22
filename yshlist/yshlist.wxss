@@ -1,0 +1,41 @@
+/* pages/yshlist/yshlist.wxss */
+.sc-list{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sc-item{
+  display: flex;
+  width: 700rpx;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  border: 2px solid pink;
+  box-sizing: border-box;
+  margin: 7rpx;
+}
+
+.sc-image{
+  width: 300rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+}
+
+.yshitem-text{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.sc-text{
+  font-size: 25rpx;
+  margin-left: 15rpx;
+  margin-top: 20rpx;
+}
+
+.number-text{
+  margin:30rpx;
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "消息",
+  "usingComponents": {
+    "searchbar":"/com/search/searchbar"
+  }
+}

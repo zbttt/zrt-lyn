@@ -1,0 +1,54 @@
+<!--pages/store/store.wxml-->
+<navigator url="/pages/search/search"><searchbar bindsearchin="onsearchinput"></searchbar></navigator>
+
+
+   <swiper  class="swiper-group" indicator-dots circular autoplay interval="2000" >
+       <swiper-item>
+        <image class="swiper-img" src="/pictures/商城1.jpg"></image>
+       </swiper-item>
+       <swiper-item>
+         <image class="swiper-img" src="/pictures/商城2.jpg"></image>
+       </swiper-item>
+       <swiper-item>
+         <image class="swiper-img" src="/pictures/商城3.jpg"></image>
+       </swiper-item>
+   </swiper>
+
+
+  <view class="all-group">
+   <view class="fqlist">
+    <fq name="健康食品" fqimageurl="/pictures/健康食品.png" bindtap="judge" id="食品"></fq>
+    <fq name="学习专区" fqimageurl="/pictures/学习资料.png" bindtap="judge" id="学习"></fq>
+    <fq name="化妆用品" fqimageurl="/pictures/时尚美甲.png" bindtap="judge" id="化妆"></fq>
+    <fq name="数码科技" fqimageurl="/pictures/数码配件.png" bindtap="judge" id="数码"></fq>
+    <fq name="潮鞋专区" fqimageurl="/pictures/鞋.png" bindtap="judge" id="鞋子"></fq>
+    <fq name="运动用品" fqimageurl="/pictures/运动健身.png" bindtap="judge" id="运动用品"></fq>
+    <fq name="潮流服饰" fqimageurl="/pictures/衣服.png" bindtap="judge" id="服饰"></fq>
+    <fq name="生活用品" fqimageurl="/pictures/生活用品.png" bindtap="judge" id="日用品"></fq>
+   </view>
+  </view>
+
+<view class="activity">
+<view class="activity-list">
+  <view class="new-today">
+    <view class="new-text">
+      <text>今日上新</text>
+    </view>
+
+    <view class="new-imageitem">
+      <image class="new-image" src="/pictures/11.jpg"></image>
+    </view>
+  </view>
+
+  <view class="new-today">
+    <view class="new-text">
+      <text>猜你喜欢</text>
+    </view>
+
+    <view class="new-imageitem">
+      <image class="new-image" src="/pictures/6.jpg"></image>
+    </view>
+  </view>
+
+</view>
+ </view>

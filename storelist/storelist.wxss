@@ -1,0 +1,23 @@
+/* pages/storelist/storelist.wxss */
+
+.store-list{
+  display: flex;  
+  /* justify-content: space-evenly; */
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.sp-item1{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.sp-item{
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+}
+

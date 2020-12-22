@@ -1,0 +1,42 @@
+<view class="login-group">
+  <image src="/pictures/摄图网_500360705_星空星轨银河素材（非企业商用）.jpg"></image>
+  <view class="user1">
+    <view class="user">
+    <text class="login-item">账号:</text>
+    <input name="user-login" placeholder="请输入注册账号"  placeholder-class="phcolor" class="input"
+    bindinput ="login" value="{{inputvalue}}"/>
+</view>
+<view class="user">
+    <text class="login-item">密码:</text>
+    <input name="password-login" placeholder="请输入注册密码" placeholder-class="phcolor" class="input"
+    bindinput ="password" value="{{inputvalue}}"/>
+</view>
+<view class="user">
+    <text class="login-item">age:</text>
+    <input name="password-login" placeholder="请输入用户年龄" placeholder-class="phcolor" class="input"
+    bindinput ="passage" value="{{inputvalue}}"/>
+</view>
+<view class="user">
+    <text class="login-item">name:</text>
+    <input name="password-login" placeholder="请输入用户姓名" placeholder-class="phcolor" class="input"
+    bindinput ="name" value="{{inputvalue}}"/>
+</view>
+<radio-group bindchange="checkboxChange">
+    <radio value='男' class="check-item1" checked="{{check}}" >male</radio>
+    <radio value='女' class="check-item1" checked="{{check}}">female</radio>
+</radio-group>
+
+
+
+<navigator bindtap="toastShow" ><button bindtap="zhuce" class="button-login" >注册账号</button></navigator>
+
+<toast hidden="{{status}}" duration="1000" bindchange="toastHide">
+        注册失败
+</toast>
+<toast wx:if="{{flag}}"  hidden="{{status}}" duration="1000" bindchange="toastHide">
+        注册成功
+</toast>
+
+</view>
+
+</view>

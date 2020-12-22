@@ -1,0 +1,4 @@
+<!--pages/dshlist/dshlist.wxml-->
+<view class="dfh-list">
+  <list wx:for="{{[1,2,3,4,5,6]}}" sp="Jordan官方AIR JORDAN 5RETRO SE AJ5复刻男子运动鞋情侣款CZ5725" title="确认收货"></list>
+</view>

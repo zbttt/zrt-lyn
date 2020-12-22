@@ -36,7 +36,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.13.1",
-  "appid": "wx1ac2d8301fe99423",
+  "appid": "wx5841d96c1238fc79",
   "projectname": "%E6%A0%A1%E5%9B%AD%E4%BA%8C%E6%89%8B%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0",
   "debugOptions": {
     "hidedInDevtools": []
@@ -78,6 +78,102 @@
         {
           "name": "pages/yshlist/yshlist",
           "pathName": "pages/yshlist/yshlist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/spinfo/spinfo",
+          "pathName": "pages/spinfo/spinfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/dfhlist/dfhlist",
+          "pathName": "pages/dfhlist/dfhlist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/dshlist/dshlist",
+          "pathName": "pages/dshlist/dshlist",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "page/upsp/upsp",
+          "pathName": "page/upsp/upsp",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "page/zhuce/zhuce",
+          "pathName": "page/zhuce/zhuce",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "page/login/login",
+          "pathName": "page/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "page/test/test",
+          "pathName": "page/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "page/exchange/exchange",
+          "pathName": "page/exchange/exchange",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/user",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/user",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "page/login/login",
+          "pathName": "page/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/message/message",
+          "pathName": "pages/message/message",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/store/store",
+          "pathName": "pages/store/store",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "page/exchange/exchange",
+          "pathName": "page/exchange/exchange",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/store/store",
+          "pathName": "pages/store/store",
           "scene": null
         }
       ]

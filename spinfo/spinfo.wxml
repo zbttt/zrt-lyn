@@ -1,0 +1,63 @@
+<!--pages/spinfo/spinfo.wxml-->
+<swiper  class="swiper-group" indicator-dots circular >
+      <swiper-item wx:for="{{imgs}}">
+        <image class="swiper-img" src="{{item.addr}}"></image>
+      </swiper-item>
+</swiper>
+  <view class="a"> <view class="spinfo-text">
+        <text class="text">{{name}}</text>
+       </view>
+      <view class="price-info">
+       <view class="rmb">
+        <image class="rmb-image" src="/pictures/人民币2-01.png"></image>
+       </view>
+      
+       <view class="price">
+        <text>{{price}}</text>
+       </view>  
+      
+       
+        <view class="button-buy">
+          <image class="button-buyimage" src="/pictures/购买.png"></image>
+        </view>
+       
+    </view></view>
+   
+    
+   <view class="pj">
+    <view class="up-kucun">
+      
+      <view class="kucun">
+      <text class="kucun-text">库存:{{kucun}}</text>
+     </view>
+     <navigator class="jh" wx:if="{{exchange==true}}" bindtap="exchange">
+     <image class="jiaohuan" src="/pictures/标签.png" ><text class="jiaohuantext">交换</text></image>
+    </navigator>
+    </view>
+    
+    
+     <view class="pj-point">
+       <text class="pj-text">用户评价:</text>
+       <stars rate="{{rate}}"></stars>
+     </view>
+   </view>
+
+   <view class="intro">
+     <text>商品简介:{{intro}}</text>
+   </view>
+   
+
+     <view class="button-groupitem">
+       <navigator class="button-item">
+           <image class="button-image" src="/pictures/联系.png"></image>
+           <text class="button-text">联系卖家</text>
+       </navigator>
+
+       <navigator class="button-item" bindtap="shoucang">
+          <image class="button-image" src="/pictures/收藏.png"></image>
+          <text class="button-text">收藏商品</text>
+      </navigator>
+     </view>
+
+
+    
